@@ -1,0 +1,248 @@
+.section-home {
+    background-color: #000;
+    padding-top: 2rem;
+}
+
+.home-card {
+    max-width: 550px;
+    /* min-width: 490px; */
+    border: 3px solid #000;
+    background-color: #000; 
+}
+
+.home-card:hover {
+    max-width: 550px;
+    min-width: 490px;
+    border: 3px solid #000;
+    background-color: #000; 
+}
+
+.home-card img {
+    height: 300px;
+    max-width: 500px;
+    object-fit: cover;
+    border-bottom: 3px solid #000;
+}
+
+.home-card p {
+    background-color: #000;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+     color: #fff;
+    -webkit-text-stroke: 0.6px rgb(255, 0, 0);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.triangle {
+  position: relative;
+  background: #000;
+  height: 45px;
+}
+
+.triangle::before {
+  z-index: 3; 
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 38px 38px 0 38px;
+  border-color: #000 transparent transparent transparent;
+  left: 72%;
+  transform: translateX(-50%) translateY(100%);
+}
+
+
+/* ------------------------------- */
+
+.section-ubicacion {
+  padding-top: 2rem;
+  position: relative; 
+  background-color: rgb(179, 175, 175);
+    /* margin-top: 0; */
+}
+
+.donde-estamos {
+  background-color: aquamarine;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+
+.col-donde-estamos {
+  min-width: 450px; 
+  margin: 3rem;
+  background-color: rgb(211, 209, 209);
+}
+
+.col-donde-estamos div {
+  min-width: 270px; 
+  padding-left: 1rem;
+}
+
+.col-mapa {
+  width: 400px;
+  padding: 0;
+}
+
+.col-img-mapa {
+  max-width: 200px;
+}
+
+.img-mapa{
+    width: 150px;
+    height: 220px;
+    align-self: flex-end;
+}
+
+.section-ubicacion h3 {
+    width: 100%;
+    background-color: #000;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    /* -webkit-text-stroke: 0.6px rgb(23, 50, 205); */
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.triangle2 {
+  position: relative;
+  background: rgb(179, 175, 175);
+  height: 45px;
+}
+
+.triangle2::before {
+  z-index: 5;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 38px 38px 0 38px;
+  border-color: rgb(179, 175, 175) transparent transparent transparent;
+  left: 28%;
+  transform: translateX(-50%) translateY(100%);
+}
+
+
+/* ------------------------- */
+
+.section-horario {
+  background-color: rgb(152, 117, 104);
+
+}
+
+.col-horario {
+  /* width: 100%; */
+  background-color: rgb(142, 135, 135);
+}
+
+.section-horario h4 {
+    /* background-color: rgb(63, 211, 13); */
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #000;
+    border-radius: 0.5rem;
+    -webkit-text-stroke: 0.6px rgb(63, 211, 13);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.section-horario h3 {
+    /* background-color: #000; */
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #000;
+    border-radius: 0.5rem;
+    -webkit-text-stroke: 0.6px rgb(205, 104, 67);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.img-reloj{
+    width: 150px;
+    height: 200px;
+   /*  position: absolute;
+    top: 15%;
+    left: 42%; */
+}
+
+
+/* ----------------------------- */
+
+.container-video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-video iframe {
+  width: 500px;
+  height: 350px;
+}
+
+.section-whatsapp {
+  padding-top: 2rem;
+  background-color: rgb(255, 0, 0);
+}
+
+.section-whatsapp > img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 200px;
+}
+
+.whatsapp {
+    width: 250px;
+    height: 250px;
+    border-radius: 10rem;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+} 
+
+.whatsapp:hover {
+  transform: scale(1.2); /* Agranda la imagen al 120% */
+}
+
+/* Para achicar, simplemente cambia el valor */
+.whatsapp:active {
+  transform: scale(0.8); /* Achica la imagen al 80% */
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid rgb(63, 211, 13);
+  animation: arrow-bounce 2s infinite;
+}
+
+@keyframes arrow-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px); /* Mueve 10px hacia arriba */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}

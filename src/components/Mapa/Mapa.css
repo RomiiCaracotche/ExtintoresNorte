@@ -1,0 +1,53 @@
+.leaflet-container {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 2px solid rgb(23, 50, 205);
+    object-fit: cover;
+}
+
+.custom-marker .marker-content {
+  background-color: red;
+}
+
+/* ---------xs----------- */
+@media screen and (max-width: 575px) {
+  .leaflet-container {
+    width: 370px;
+    height: 370px;    
+  }
+}
+
+
+/* ---------sm----------- */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .leaflet-container {
+    width: 370px;
+    height: 370px;    
+  }
+}
+
+/* ---------md----------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .leaflet-container {
+    width: 370px;
+    height: 370px;    
+  }
+}
+
+/* ---------lg----------- */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .leaflet-container {
+    width: 370px;
+    height: 370px;   
+  }
+}
+
+/* ---------xl----------- */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+}
+
+/* ---------xxl----------- */
+@media screen and (min-width: 1400px) {
+
+}
