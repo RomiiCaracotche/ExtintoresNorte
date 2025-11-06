@@ -19,7 +19,7 @@ export default function Home() {
                         <Col xs={11} sm={10} md={6} lg={5} xl={4} className="col-card">
                             <Card className="home-card card-impar">
                                 {/* <Card.Img variant="top" src="./../../../public/img/frente.jpg" /> */}
-                                <Card.Img variant="top" src="./public/img/frente.jpg" />
+                                <Card.Img variant="top" src="/../../../public/img/frente.jpg" />
                                 <Card.Body className="home-card-body">
                                     <Card.Text>VENTA Y RECARGA DE MATAFUEGOS</Card.Text>
                                 </Card.Body>
