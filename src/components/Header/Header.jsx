@@ -4,7 +4,7 @@ export default function Header(){
     return (
         <div className="container-nav"> 
             <div className='nombre'> 
-                <span>Extintores Norte</span>
+                <span>EXTINTORES NORTE</span>
             </div>
         </div>
     )

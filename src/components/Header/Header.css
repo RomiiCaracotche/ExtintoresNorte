@@ -3,7 +3,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
 }
 
 .nombre {
@@ -15,12 +14,11 @@
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
-	position: relative;
 }
 
 .nombre span {
+	margin: 1rem 0;
 	font-size: 4rem;
-	font-family: "Ubuntu", sans-serif;
   	font-weight: 500;
   	font-style: normal;
     text-transform: capitalize;

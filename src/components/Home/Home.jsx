@@ -1,7 +1,7 @@
 import "./Home.css";
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import { FaMapLocationDot, FaPhone } from "react-icons/fa6";
-import { MdAlternateEmail } from "react-icons/md";
+import { MdAlternateEmail, MdHeight } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
@@ -23,13 +23,14 @@ export default function Home() {
                             <Card className="home-card card-impar">
                                 <Card.Img variant="top" src="/img/frente.jpg" />
                                 <Card.Body className="home-card-body">
-                                    <Card.Text>VENTA Y RECARGA DE MATAFUEGOS</Card.Text>
+                                    {/* <Card.Text>VENTA Y RECARGA DE MATAFUEGOS</Card.Text> */}
+                                    <Card.Text>EXTINTORES NORTE</Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col xs={11} sm={10} md={6} lg={5} xl={4} className="col-card">
                             <Card className="home-card card-par">
-                                <Card.Img variant="top" src="/img/local.jpg" />
+                                <Card.Img variant="top" src="/img/local.jpg" className="object-fit-cover"/>
                                 <Card.Body className="home-card-body">
                                     <Card.Text>ELEMENTOS DE PREVENCION Y SEGURIDAD</Card.Text>
                                 </Card.Body>
@@ -48,7 +49,7 @@ export default function Home() {
                         </Col>
                         <Col xs={11} sm={10} md={6} lg={5} xl={4} className="col-card">
                             <Card className="home-card card-par">
-                                <Card.Img variant="top" src="/img/prevencion.png" />
+                                <Card.Img variant="top" src="/img/prevencion.png"/>
                                 <Card.Body className="home-card-body">
                                     <Card.Text>CONOCIMIENTO Y EXPERIENCIA EN PREVENCION DE INCENDIOS</Card.Text>
                                 </Card.Body>
@@ -105,27 +106,17 @@ export default function Home() {
             <section className="mt-5 pb-5">
                     <Container-fluid> 
                         <Row className="row-center-center">
-                            <Col xs={12} md={11} lg={6} xl={6} className="row-center-center">
+                            <Col xs={12} md={11} lg={9} xl={7} className="row-center-center">
                                 <div className="container-video">
                                     <video src="/video/video.mp4" controls/>
                                 </div>
                             </Col>
-                            <Col xs={12} md={11} lg={5} xl={6}>
-                                <Row className="row-center-center">
-                                    <Col xs={12} sm={10} md={10} lg={12} xl={12}>
-                                        <a href="https://wa.me/2215369997" className="row-center-center whatsapp">
-                                            <img src="/img/whatsapp.png"/>
-                                        </a>
-                                    </Col>
-                                    <Col xs={12} sm={10} md={12} lg={12} xl={12} className="row-center-center col-extintor-whatsapp">
-                                        <img src="/img/animacion/matafuego-llamando.png" className="img-extintor"/>
-                                    </Col>
-                                </Row>  
-                            </Col> 
                         </Row>
                     </Container-fluid> 
                 </section>   
-
+                <a href="https://wa.me/2215369997" >
+                    <img src="/img/whats2.png" className="whatsapp"/>
+                </a>
         </div>
     )
 }

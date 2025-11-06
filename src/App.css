@@ -1,9 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-
+@font-face {
+    font-family: 'bank-sans';
+    src: url('./assets/fonts/bank-sans.otf') ; /* Asegúrate del formato */
+    font-weight: normal; 
+    font-style: normal;
+    font-display: swap; 
+}
 
 * {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'bank-sans';
   margin: 0;
   padding: 0; 
 }
