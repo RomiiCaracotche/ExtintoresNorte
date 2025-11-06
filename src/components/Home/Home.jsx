@@ -14,12 +14,11 @@ export default function Home() {
         <div className="container-home">
 
             <section className="seccion-home">
-                {/* <img src="./../../../public/img/animacion/matafuego-bienvenido.png" className="bienvenido-home"/> */}
                 <Container-fluid>
                     <Row className="row-center-center">
                         <Col xs={11} sm={10} md={6} lg={5} xl={4} className="col-card">
                             <Card className="home-card card-impar">
-                                <Card.Img variant="top" src="./../public/img/frente.jpg" />
+                                <Card.Img variant="top" src="/img/frente.jpg" />
                                 <Card.Body className="home-card-body">
                                     <Card.Text>VENTA Y RECARGA DE MATAFUEGOS</Card.Text>
                                 </Card.Body>
@@ -38,7 +37,7 @@ export default function Home() {
                     <Row className="row-center-center">
                         <Col xs={11} sm={10} md={6} lg={5} xl={4} className="col-card">
                             <Card className="home-card card-impar">
-                                <Card.Img variant="top" src="./public/img/camioneta.png" className="object-fit-contain" />
+                                <Card.Img variant="top" src="/img/camioneta.png" className="object-fit-contain" />
                                 <Card.Body className="home-card-body">
                                     <Card.Text>RETIRO Y ENTREGA A DOMICILIO</Card.Text>
                                 </Card.Body>
@@ -46,7 +45,7 @@ export default function Home() {
                         </Col>
                         <Col xs={11} sm={10} md={6} lg={5} xl={4} className="col-card">
                             <Card className="home-card card-par">
-                                <Card.Img variant="top" src="./../../../public/img/prevencion.png" />
+                                <Card.Img variant="top" src="/img/prevencion.png" />
                                 <Card.Body className="home-card-body">
                                     <Card.Text>CONOCIMIENTO Y EXPERIENCIA EN PREVENCION DE INCENDIOS</Card.Text>
                                 </Card.Body>
@@ -62,7 +61,7 @@ export default function Home() {
                             <Col xs={12} sm={12} md={8} lg={7} xl={7} className="">
                                 <Row className="row-center-center">
                                     <Col xs={12} sm={11} md={3} lg={3} xl={4} className="col-ubicacion">
-                                        <img src="./../../../public/img/animacion/matafuego-mapa.png" className="img-extintor" />
+                                        <img src="/img/animacion/matafuego-mapa.png" className="img-extintor" />
                                     </Col>
                                     <Col xs={12} sm={11} md={9} lg={7} xl={7}>
                                         <div className="column-center-center">
@@ -94,7 +93,7 @@ export default function Home() {
                                         <li><FaClock /> SABADOS de 8.30hs a 13hs</li>
                                     </ul>
                                 </div>
-                                <img src="./../../../public/img/animacion/matafuego-reloj.png" className="img-extintor"/>
+                                <img src="/img/animacion/matafuego-reloj.png" className="img-extintor"/>
                             </Col>
                         </Row>
                 </Container-fluid>
@@ -112,11 +111,11 @@ export default function Home() {
                                 <Row className="row-center-center">
                                     <Col xs={12} sm={10} md={10} lg={12} xl={12}>
                                         <a href="https://wa.me/2215369997" className="row-center-center whatsapp">
-                                            <img src="./../../../public/img/whatsapp.png"/>
+                                            <img src="/img/whatsapp.png"/>
                                         </a>
                                     </Col>
                                     <Col xs={12} sm={10} md={12} lg={12} xl={12} className="row-center-center col-extintor-whatsapp">
-                                        <img src="./../../../public/img/animacion/matafuego-llamando.png" className="img-extintor"/>
+                                        <img src="/img/animacion/matafuego-llamando.png" className="img-extintor"/>
                                     </Col>
                                 </Row>  
                             </Col> 
