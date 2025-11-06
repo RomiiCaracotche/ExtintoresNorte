@@ -6,15 +6,6 @@
 	position: relative;
 }
 
-.bienvenido {
-    width: 170px; 
-    height: 180px; 
-    position: absolute;
-    top: 0;
-    left: 5%;
-	z-index: 1;
-}
-
 .nombre {
  	background: #e62320;
 	background: linear-gradient(180deg, rgba(230, 35, 32, 1) 0%, rgba(0, 0, 0, 1) 100%); 
@@ -43,23 +34,3 @@
 }
 
 
-/* ---------xs----------- */
-@media screen and (max-width: 575px) {
-	.bienvenido {
-		display: none;
-	}
-}
-
-/* ---------sm----------- */
-@media screen and (min-width: 576px) and (max-width: 767px) {
-	.bienvenido {
-		display: none;
-	}
-}
-
-/* ---------md----------- */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-	.bienvenido {
-		display: none;
-	}
-}
