@@ -5,9 +5,9 @@ import { HiMenuAlt1 } from "react-icons/hi";
 
 export default function Navegacion() {
     return (
-        <Navbar expand="lg" className="navbar">
-                <Navbar.Toggle aria-controls="basic-navbar-nav" className='nav-toggle'> 
-                    <HiMenuAlt1 className='menu'/>
+        <Navbar expand="lg" className="navbar py-0" >
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className='nav-toggle bg-dark'> 
+                    <HiMenuAlt1 className='menu bg-dark text-light'/>
                 </Navbar.Toggle> 
                 <Navbar.Collapse id="basic-navbar-nav" className='nav-collapse'>
                     <Nav>
