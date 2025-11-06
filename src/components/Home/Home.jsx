@@ -104,7 +104,7 @@ export default function Home() {
                         <Row className="row-center-center">
                             <Col xs={12} md={11} lg={6} xl={6} className="row-center-center">
                                 <div className="container-video">
-                                    <video src="./../../../public/video/video.mp4" controls/>
+                                    <video src="/video/video.mp4" controls/>
                                 </div>
                             </Col>
                             <Col xs={12} md={11} lg={5} xl={6}>
