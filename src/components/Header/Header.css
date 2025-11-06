@@ -18,16 +18,13 @@
 
 .nombre span {
 	margin: 1rem 0;
-	font-size: 4rem;
-  	font-weight: 500;
-  	font-style: normal;
-    text-transform: capitalize;
+	font-size: 3rem;
 	text-align: center;
-    font-weight: bold;
+	font-weight: bold;
     color: #fff;
 	text-shadow: 5px 10px 5px #000;
 	background-color: transparent;
-	-webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
+	-webkit-text-fill-color: #fff;
   	-webkit-text-stroke: 1px #000;
 }
 
