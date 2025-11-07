@@ -15,6 +15,7 @@
   .leaflet-container {
     width: 370px;
     height: 370px;    
+    border-radius: 5%;
   }
 }
 

@@ -19,16 +19,15 @@ export default function Home() {
                 </div>
                 <Container-fluid>
                     <Row className="row-center-center">
-                        <Col xs={11} sm={10} md={6} lg={5} xl={4} className="col-card">
+                        <Col xs={10} sm={8} md={6} lg={5} xl={4} className="col-card">
                             <Card className="home-card card-impar">
                                 <Card.Img variant="top" src="/img/frente.jpg" />
                                 <Card.Body className="home-card-body">
-                                    {/* <Card.Text>VENTA Y RECARGA DE MATAFUEGOS</Card.Text> */}
-                                    <Card.Text>EXTINTORES NORTE</Card.Text>
+                                    <Card.Text>VENTA Y RECARGA DE MATAFUEGOS</Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col xs={11} sm={10} md={6} lg={5} xl={4} className="col-card">
+                        <Col xs={10} sm={8} md={6} lg={5} xl={4} className="col-card">
                             <Card className="home-card card-par">
                                 <Card.Img variant="top" src="/img/local.jpg" className="object-fit-cover"/>
                                 <Card.Body className="home-card-body">
@@ -39,15 +38,15 @@ export default function Home() {
                     </Row>
 
                     <Row className="row-center-center">
-                        <Col xs={11} sm={10} md={6} lg={5} xl={4} className="col-card">
+                        <Col xs={10} sm={8} md={6} lg={5} xl={4} className="col-card">
                             <Card className="home-card card-impar">
-                                <Card.Img variant="top" src="/img/camioneta.png" className="object-fit-contain" />
+                                <Card.Img variant="top" src="/img/servicios/camioneta.png" className="object-fit-contain" />
                                 <Card.Body className="home-card-body">
                                     <Card.Text>RETIRO Y ENTREGA A DOMICILIO</Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col xs={11} sm={10} md={6} lg={5} xl={4} className="col-card">
+                        <Col xs={10} sm={8} md={6} lg={5} xl={4} className="col-card">
                             <Card className="home-card card-par">
                                 <Card.Img variant="top" src="/img/prevencion.png"/>
                                 <Card.Body className="home-card-body">
@@ -71,7 +70,8 @@ export default function Home() {
                                         <div className="column-center-center">
                                             <h3 className="fw-bold mb-3 mt-5">¿DONDE ESTAMOS?</h3>
                                             <ul className="li-horario">
-                                                <li><FaMapLocationDot /> 519 N° 1820 esquina 13, 1900 La Plata</li>
+                                                <li>La Plata (1900)</li>
+                                                <li><FaMapLocationDot /> 519 N° 1820 esquina 13</li>
                                                 <li><MdAlternateEmail /> <a href="mailto:extintoresnorte@hotmail.com">extintoresnorte@hotmail.com</a></li>
                                                 <li><FaPhone /> <a href="tel:02214710750">0221 471-0750</a></li>
                                                 <li><IoLogoWhatsapp /> <a href="https://wa.me/2215448911">221-544-8911</a></li>

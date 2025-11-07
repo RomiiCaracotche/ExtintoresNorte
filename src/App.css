@@ -7,14 +7,17 @@
     font-display: swap; 
 }
 
-* {
+/* * {
   font-family: 'bank-sans';
   margin: 0;
   padding: 0; 
+} */
+
+html, body {
+    font-family: 'bank-sans';
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-.app {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-}
