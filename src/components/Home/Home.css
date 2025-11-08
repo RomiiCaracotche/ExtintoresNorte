@@ -1,91 +1,3 @@
-.seccion-home {
-    width: 100%;
-  }
-
-  .img-bienvenido {
-    margin: 2rem 0;
-    height: 270px;
-    width: 220px;
-  } 
-
-.container-home {
-  background: #000;
-  width: 100vw;
-}
-
-.home-card {
-  border: 2px solid #000;
-  border-radius: 1rem;
-  margin-top: 2rem;
-}
-
-.card-impar {
-  margin-left: 1.5rem;
-}
-
-.card-par {
-  margin-right: 1.5rem;
-}
-
-.home-card:hover {
-  transform: scale(105%);
-  filter: grayscale(50%);
-}
-
-.home-card > img {
-  height: 300px;
-  object-fit: fill; 
-  object-position: center; 
-  border-radius: 1rem;
-}
-
-.home-card-body {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-weight: bold;
-}
-
-/* ------------------------------- */
-
-.seccion-horario {
-  color: #fff;
-  margin-top: 2rem;
-}
-
-.col-horario {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.col-ubicacion {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  padding: 0;
-  margin-left: 1rem;
-}
-
-.col-ubicacion img {
-  margin-top: 2rem;
-}
-
-.img-extintor {
-  margin: 2rem 0;
-  height: 220px;
-  width: 190px;
-}
-
-.extintor-position {
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-}
-
 .column-center-center {
   display: flex;
   flex-direction: column;
@@ -99,40 +11,145 @@
   align-items: center;
 }
 
-.li-horario {
+.container-home {
+  background: #000; 
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-bienvenido {
+    margin: 2rem 0;
+    height: 270px;
+    width: 220px;
+} 
+
+.img-extintor {
+  height: 220px;
+  width: 190px;
+}
+
+.card-paridad {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.card-impar {
+  justify-content: flex-end;
+}
+
+.card-par {
+  justify-content: flex-start;
+}
+
+.home-card {
+  margin: 1rem;
+  width: 80%;
+  border: 2px solid #7a7878;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.home-card:hover {
+  transform: scale(105%);
+  filter: grayscale(50%);
+}
+
+.home-card > img {
+  height: 300px;
+  width: 90%; 
+  object-fit: fill; 
+  object-position: center; 
+  border-radius: 1rem;
+  border: 2px solid #000;
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.7));
+}
+
+.home-card-body {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* -------------- Seccion ubicacion ----------------- */
+
+.ul-ubicacion {
   list-style-type: none;
   padding: 0;
 }
 
-.li-horario li {
+.ul-ubicacion li {
   margin-top: 1rem;
   font-weight: bold;
   font-size: 1.25rem;
   text-align: center;
-}
-
-.li-horario li {
   color: red;
-}
-
-.li-horario li a {
-  text-decoration: none;
-  color: rgb(189, 183, 183);
-}
-
-.li-horario li a:hover {
-  color: #fff;
-  transform: scale(1.2)
 }
 
 .col-mapa {
   display: flex;
-  justify-content: start;
-  align-items:start;
-  margin: 2rem 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 }
 
-/* --------------------------- */
+
+/* -------------- Seccion contacto/horario ----------------- */
+
+.row-contacto_horario {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul-contacto, .ul-horario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.ul-contacto li, .ul-horario li {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+  color: red;
+}
+
+.ul-contacto li a {
+  text-decoration: none;
+  color: red;
+}
+
+.ul-contacto li a:hover {
+  color: #fff;
+  transform: scale(1.2)
+}
+
+.col-extintor-reloj {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+/* -------------- Seccion video ----------------- */
+
+/* -------------- Seccion whatsapp ----------------- */
 
 .whatsapp {
   height: 130px;
@@ -161,12 +178,16 @@
   border-radius: 1rem;
 }
 
+
  .seccion-home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
+
+/* -------------- RESPONSIVE ----------------- */
 
 
 /* ---------xs----------- */
@@ -178,6 +199,11 @@
 
   .col-horario {
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .col-horario-img {
+    justify-content: center;
   }
 
  .col-ubicacion {
@@ -190,18 +216,23 @@
     align-items: center;
   }
 
-  .card-impar {
-    margin-left: 0;
-  }
-
-  .card-par {
-    margin-right: 0;
-  }
-
   .whatsapp {
     height: 100px;
     width: 100px;
     bottom: 10px;
+  }
+
+.card-impar {
+  justify-content: center;
+}
+
+.card-par {
+  justify-content: center;
+}
+
+.col-extintor-reloj {
+    justify-content: center;
+    align-items: center;
   }
 
 }
@@ -230,12 +261,26 @@
     align-items: center;
   }
 
-  .card-impar {
-    margin-left: 0;
+  .col-horario {
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .card-par {
-    margin-right: 0;
+  .col-horario-img {
+    justify-content: center;
+  }
+
+.card-impar {
+  justify-content: center;
+}
+
+.card-par {
+  justify-content: center;
+}
+
+.col-extintor-reloj {
+    justify-content: center;
+    align-items: center;
   }
 
 }
@@ -253,6 +298,18 @@
     justify-content: center;
     align-items: center;
   }
+
+  .home-card > img {
+    width: 90%; 
+  }
+
+  .home-card {
+    width: 100%;
+  }
+
+  /* .col-extintor-reloj {
+    justify-content: center;
+  } */
 
 }
 

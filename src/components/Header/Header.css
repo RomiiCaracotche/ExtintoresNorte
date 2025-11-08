@@ -7,7 +7,7 @@
 
 .nombre {
  	background: #e62320;
-	background: linear-gradient(180deg, rgba(230, 35, 32, 1) 0%, rgba(0, 0, 0, 1) 100%); 
+	background: linear-gradient(180deg, rgba(230, 35, 32, 1) 0%, rgba(0, 0, 0, 1) 100%);  
 	width: 100vw;
 	height: 200px;
 	display: flex;
