@@ -18,8 +18,8 @@ export default function Home() {
             {/* ----------- Seccion home ----------- */}
             <section className="mt-5">
                 <Container-fluid>
-                    <Row className="row-center-center" >
-                        <Col xs={10} sm={9} md={5} className="card-paridad card-impar">
+                    <Row className="row-cards" >
+                        <Col xs={10} sm={9} md={5} lg={4} xl={3} className="col-card">
                             <Card className="home-card">
                                 <Card.Img variant="top" src="/img/frente.jpg" />
                                 <Card.Body className="home-card-body">
@@ -27,7 +27,7 @@ export default function Home() {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col xs={10} sm={9} md={5} className="card-paridad card-par">
+                        <Col xs={10} sm={9} md={5} lg={4} xl={3} className="col-card">
                             <Card className="home-card">
                                 <Card.Img variant="top" src="/img/local.jpg" className="object-fit-cover"/>
                                 <Card.Body className="home-card-body">
@@ -35,7 +35,7 @@ export default function Home() {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col xs={10} sm={9} md={5} className="card-paridad  card-impar">
+                        <Col xs={10} sm={9} md={5} lg={4} xl={3} className="col-card">
                              <Card className="home-card">
                                 <Card.Img variant="top" src="/img/servicios/camioneta.png" className="object-fit-contain" />
                                 <Card.Body className="home-card-body">
@@ -43,7 +43,7 @@ export default function Home() {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col xs={10} sm={9} md={5} className="card-paridad card-par">
+                        <Col xs={10} sm={9} md={5} lg={4} xl={3} className="col-card">
                             <Card className="home-card">
                                 <Card.Img variant="top" src="/img/prevencion.png"/>
                                 <Card.Body className="home-card-body">
@@ -86,7 +86,7 @@ export default function Home() {
             <section className="w-100 mt-5">   
                 <Container-fluid>
                         <Row className="row-contacto_horario">             
-                                <Col xs={12} sm={12} md={8} lg={7} xl={4} className="bg-warning">
+                                <Col xs={12} sm={12} md={8} lg={7} xl={4}>
                                     <div className="column-center-center">
                                         <h3 className="fw-bold mb-3 mt-5 text-center text-white">CONTACTANOS POR</h3>
                                         <ul className="ul-contacto">
@@ -100,8 +100,8 @@ export default function Home() {
                                     </div>  
                                 </Col>
                                 <Col xs={12} sm={12} md={7} lg={7} xl={5} className="h-100">
-                                    <Row className="bg-info">
-                                            <Col xs={12} sm={12} md={8} lg={11} xl={8} className="bg-danger">
+                                    <Row>
+                                            <Col xs={12} sm={12} md={8} lg={11} xl={8}>
                                                 <div className="d-flex flex-column justify-content-around align-items-center mt-5">
                                                     <h3 className="fw-bold mb-3 mt-5 text-center text-white">HORARIOS</h3>
                                                     <ul className="ul-horario">
@@ -112,7 +112,7 @@ export default function Home() {
                                                     </ul>
                                                 </div>
                                             </Col>
-                                            <Col xs={12} sm={12} md={4} lg={1} xl={3} className="col-extintor-reloj bg-dark">
+                                            <Col xs={12} sm={12} md={4} lg={1} xl={3} className="col-extintor-reloj">
                                                 <img src="/img/animacion/matafuego-reloj.png" className="img-extintor"/>
                                             </Col>
                                     </Row>
@@ -126,7 +126,7 @@ export default function Home() {
             <section className="mt-5 pb-5">
                     <Container-fluid> 
                         <Row className="row-center-center">
-                            <Col xs={12} md={11} lg={9} xl={7} className="row-center-center">
+                            <Col xs={12} md={11} lg={9} xl={7} className="row-center-center w-75">
                                 <div className="container-video">
                                     <video src="/video/video.mp4" controls/>
                                 </div>
