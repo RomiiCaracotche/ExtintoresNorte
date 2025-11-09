@@ -91,9 +91,9 @@ export default function Home() {
                                         <h3 className="fw-bold mb-3 mt-5 text-center text-white">CONTACTANOS POR</h3>
                                         <ul className="ul-contacto">
                                             <li><a href="mailto:extintoresnorte@hotmail.com"><MdAlternateEmail/> extintoresnorte@hotmail.com</a></li>
-                                            <li><a href="tel:02214710750"><FaPhone/> 0221 471-0750</a></li>
-                                            <li><a href="https://wa.me/2215448911"><IoLogoWhatsapp/> 221-544-8911</a></li>
-                                            <li><a href="https://wa.me/2215369997"><IoLogoWhatsapp/> 221-536-9997</a></li>
+                                            <li><a className="text-secondary" href="tel:02214710750"><FaPhone/> 0221 471-0750</a></li>
+                                            <li><a className="text-secondary" href="https://wa.me/2215448911"><IoLogoWhatsapp/> 221-544-8911</a></li>
+                                            <li><a className="text-secondary" href="https://wa.me/2215369997"><IoLogoWhatsapp/> 221-536-9997</a></li>
                                             <li><a href="https://www.instagram.com/extintores_norte/"><BsInstagram/> Extintores_norte</a></li>
                                             <li><a href="https://www.facebook.com/extintoresnorte/?locale=es_LA"><FaFacebook/> Extintores Norte</a></li>
                                         </ul>
@@ -106,9 +106,9 @@ export default function Home() {
                                                     <h3 className="fw-bold mb-3 mt-5 text-center text-white">HORARIOS</h3>
                                                     <ul className="ul-horario">
                                                         <li>LUNES a VIERNES</li>
-                                                        <li><FaClock /> 8.30hs a 17hs</li>
+                                                        <li className="text-secondary"><FaClock /> 8.30hs a 17hs</li>
                                                         <li>SABADOS</li>
-                                                        <li><FaClock />8.30hs a 13hs</li>
+                                                        <li className="text-secondary"><FaClock />8.30hs a 13hs</li>
                                                     </ul>
                                                 </div>
                                             </Col>
