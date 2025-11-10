@@ -66,6 +66,8 @@ nav a {
 	color: #737171;
 	border-bottom: 1px solid transparent;
 	padding: 0.5rem 0;
+	margin: 0 0.5rem;
+	letter-spacing: 1px;
 }
 
 nav a:hover {

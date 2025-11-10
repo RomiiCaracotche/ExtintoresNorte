@@ -2,6 +2,7 @@ import "./Home.css";
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import { FaMapLocationDot, FaPhone } from "react-icons/fa6";
 import { MdAlternateEmail, MdHeight } from "react-icons/md";
+import { MdOutlineAdsClick } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
@@ -63,10 +64,10 @@ export default function Home() {
                                 <Row className="row-center-center">
                                     <Col xs={12} lg={10} xl={12} >
                                         <div className="column-center-center">
-                                            <h3 className="fw-bold mb-3 mt-5 text-center text-white">PODES ENCONTRARNOS EN</h3>
+                                            <h3 className="titulo">PODES ENCONTRARNOS EN</h3>
                                             <ul className="ul-ubicacion">
-                                                <li>LA PLATA</li>
-                                                <li><FaMapLocationDot /> 519 N° 1820 esquina 13</li>
+                                                <li>LA PLATA,</li>
+                                                <li><FaMapLocationDot /> Calle 519 N° 1820 esq. 13</li>
                                             </ul>
                                         </div>
                                     </Col> 
@@ -88,14 +89,14 @@ export default function Home() {
                         <Row className="row-contacto_horario">             
                                 <Col xs={12} sm={12} md={8} lg={7} xl={4}>
                                     <div className="column-center-center">
-                                        <h3 className="fw-bold mb-3 mt-5 text-center text-white">CONTACTANOS POR</h3>
+                                        <h3 className="titulo">CONTACTANOS POR</h3>
                                         <ul className="ul-contacto">
-                                            <li><a href="mailto:extintoresnorte@hotmail.com"><MdAlternateEmail/> extintoresnorte@hotmail.com</a></li>
-                                            <li><a className="text-secondary" href="tel:02214710750"><FaPhone/> 0221 471-0750</a></li>
-                                            <li><a className="text-secondary" href="https://wa.me/2215448911"><IoLogoWhatsapp/> 221-544-8911</a></li>
-                                            <li><a className="text-secondary" href="https://wa.me/2215369997"><IoLogoWhatsapp/> 221-536-9997</a></li>
-                                            <li><a href="https://www.instagram.com/extintores_norte/"><BsInstagram/> Extintores_norte</a></li>
-                                            <li><a href="https://www.facebook.com/extintoresnorte/?locale=es_LA"><FaFacebook/> Extintores Norte</a></li>
+                                            <li><a href="mailto:extintoresnorte@hotmail.com" className="color-rojo"><MdAlternateEmail/> extintoresnorte@hotmail.com <MdOutlineAdsClick className="icon-click"/></a></li>
+                                            <li><a href="tel:02214710750" className="color-gris"><FaPhone/> 0221 471-0750 <MdOutlineAdsClick className="icon-click"/></a></li>
+                                            <li><a href="https://wa.me/2215448911" className="color-gris"><IoLogoWhatsapp/> 221-544-8911 <MdOutlineAdsClick className="icon-click"/></a></li>
+                                            <li><a href="https://wa.me/2215369997" className="color-gris"><IoLogoWhatsapp/> 221-536-9997 <MdOutlineAdsClick className="icon-click"/></a></li>
+                                            <li><a href="https://www.instagram.com/extintores_norte/" className="color-rojo"><BsInstagram/> Extintores_norte <MdOutlineAdsClick className="icon-click"/></a></li>
+                                            <li><a href="https://www.facebook.com/extintoresnorte/?locale=es_LA" className="color-rojo"><FaFacebook/> Extintores Norte <MdOutlineAdsClick className="icon-click"/></a></li>
                                         </ul>
                                     </div>  
                                 </Col>
@@ -103,12 +104,12 @@ export default function Home() {
                                     <Row>
                                             <Col xs={12} sm={12} md={8} lg={11} xl={8}>
                                                 <div className="d-flex flex-column justify-content-around align-items-center mt-5">
-                                                    <h3 className="fw-bold mb-3 mt-5 text-center text-white">HORARIOS</h3>
+                                                    <h3 className="titulo">HORARIOS</h3>
                                                     <ul className="ul-horario">
                                                         <li>LUNES a VIERNES</li>
-                                                        <li className="text-secondary"><FaClock /> 8.30hs a 17hs</li>
+                                                        <li><p className="hora"><FaClock/> 8.30hs  a  17hs</p></li>
                                                         <li>SABADOS</li>
-                                                        <li className="text-secondary"><FaClock />8.30hs a 13hs</li>
+                                                        <li><p className="hora"><FaClock/> 8.30hs  a  13hs</p></li>
                                                     </ul>
                                                 </div>
                                             </Col>
