@@ -56,8 +56,29 @@ export default function Home() {
                 </Container-fluid>
             </section>
 
+
+            {/* ----------- Seccion video ----------- */}
+
+            <section className="my-5">
+                <Row className="row-center-center">
+                    <Col xs={12} md={10} xl={6} className="row-center-center  p-0">
+                        <div className="container-info">
+                            <p>
+                                "En <span>Extintores Norte</span>, nuestro compromiso principal es tu seguridad y la de tus operaciones. Creemos que la información es la herramienta más poderosa para la prevención. Por ello, estamos interesados en informarte y capacitartre: no todo el fuego se combate de la misma manera. Te presentamos este video esencial sobre los diferentes tipos de fuego. Exploraremos la clasificación internacional (Clases A, B, C, D y K) basada en los materiales combustibles, y te mostraremos cómo la identificación correcta es vital para elegir el agente extintor adecuado y proteger tus activos. La prevención comienza con el conocimiento, y este es el primer paso para dominar la seguridad contra incendios."
+                            </p>
+                        </div>
+                    </Col>
+                    <Col xs={12} md={10} xl={6} className="row-center-center">
+                        <div className="container-video">
+                            <video src="/video/video.mp4" controls/>
+                        </div>
+                    </Col>
+                </Row>
+            </section> 
+
+
             {/* ----------- Seccion ubicacion ----------- */}
-            <section className="mt-5">
+            <section className="mt-1">
                 <Container-fluid>
                         <Row className="justify-content-around align-items-center">
                             <Col xs={12} lg={6} > 
@@ -121,20 +142,7 @@ export default function Home() {
                         </Row>
                 </Container-fluid>
             </section>
-
-            {/* ----------- Seccion video ----------- */}
-
-            <section className="mt-5 pb-5">
-                    <Container-fluid> 
-                        <Row className="row-center-center">
-                            <Col xs={12} md={11} lg={9} xl={7} className="row-center-center w-75">
-                                <div className="container-video">
-                                    <video src="/video/video.mp4" controls/>
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container-fluid> 
-                </section>  
+ 
 
             {/* ----------- Seccion whatsapp ----------- */}
 

@@ -164,7 +164,6 @@
   color: #fff;
   text-decoration: underline;
   letter-spacing: 2px;
-  /* fw-bold mb-3 mt-5 text-center text-white text-decoration-underline */
 }
 
 .ul-contacto li a:hover {
@@ -184,7 +183,32 @@
 
 /* -------------- Seccion video ----------------- */
 
+.container-info {
+  width: 80%;
+}
 
+.container-info p {
+  padding: 1rem;
+  text-align: justify;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.container-info span{
+  font-weight: bold;
+  color: red;
+}
+
+.container-video {
+  width: 80%;
+  margin-top: 2rem;
+}
+
+.container-video video {
+  width: 100%;
+  object-fit: fill;
+  border-radius: 1rem;
+}
 
 /* -------------- Seccion whatsapp ----------------- */
 
@@ -201,32 +225,9 @@
   filter: grayscale(40%);
 }
 
-.container-video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 95%; 
-  border-radius: 0.5rem;
-  border: 0.5rem solid #fff;
-}
-
-.container-video video {
-  width: 100%;
-  height: 100%;
-}
-
-
- .seccion-home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 
 
 /* -------------- RESPONSIVE ----------------- */
-
 
 /* ---------xs----------- */
 @media screen and (max-width: 575px) {
@@ -249,7 +250,7 @@
     align-items: center;
   }
 
- .col-mapa {
+  .col-mapa {
     justify-content: center;
     align-items: center;
   }
@@ -261,13 +262,17 @@
   }
 
   .col-extintor-reloj {
-      justify-content: center;
-      align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .home-card {
     width: 95%;
     margin: 1.5rem 0;
+  }
+
+  .container-video {
+    width: 90%;
   }
 
 }
@@ -319,6 +324,10 @@
     height: 350px;
   }
 
+  .container-video {
+    width: 90%;
+  }
+
 }
 
 /* ---------md----------- */
@@ -367,6 +376,10 @@
     width: 40%;
   }
 
+  .container-video {
+    width: 90%;
+  }
+
 }
 
 /* ---------xl----------- */
@@ -375,6 +388,10 @@
   .extintor-position {
       left: 100px;
     }
+
+  .container-video {
+    width: 90%;
+  }
 
 }
 
