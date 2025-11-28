@@ -18,13 +18,11 @@
 
 .container-servicios-leyenda {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px; 
+    height: auto; 
     text-align: justify;
     padding: 1rem 2rem;
-    margin-bottom: 5rem;
     border: 2px solid rgba(255, 0, 0, 0.5);
     border-radius: 1rem;
     box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.503); 
@@ -38,6 +36,34 @@
 
 .container-servicios-leyenda p span {
     color: red;
+}
+
+
+/* -------------- RESPONSIVE ----------------- */
+
+/* ---------xs----------- */
+@media screen and (max-width: 575px) {
+
+}
+
+/* ---------sm----------- */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* ---------md----------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* ---------lg----------- */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* ---------xl----------- */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+
 }
 
 

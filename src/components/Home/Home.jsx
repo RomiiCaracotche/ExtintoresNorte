@@ -82,7 +82,7 @@ export default function Home() {
                                     </div>   
                                 </Col>
                                 
-                               <Col xs={12} sm={12} md={10} lg={8} xl={5} className="col-contacto_horario">
+                               <Col xs={12} sm={12} md={10} lg={8} xl={5} className="col-contacto_horario col-horario">
                                         <div className="container-horario-info">
                                             <div className="container-horario_horario">
                                                 <h3 className="titulo">HORARIOS</h3>
@@ -105,8 +105,7 @@ export default function Home() {
 
              {/* ----------- Seccion ubicacion ----------- */}
             <section className="section-ubicacion">
-                <Container-fluid className="row-center-center w-100
-                ">
+                <Container className="row-center-center">
                         <Row className="row-ubicacion">   
                             <Col xs={12} md={10} lg={10} className="col-ubicacion"> 
                                 <h3 className="titulo">PODES ENCONTRARNOS EN</h3>
@@ -122,7 +121,7 @@ export default function Home() {
                                 <img src="/img/animacion/matafuego-mapa2.png" />
                             </Col>
                         </Row>
-                </Container-fluid>
+                </Container>
             </section>
             
  

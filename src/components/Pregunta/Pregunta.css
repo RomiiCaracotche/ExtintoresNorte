@@ -14,9 +14,29 @@
     margin: 0;
 }
 
-.container-pregunta p span {
-    color: red;
+.container-pregunta p {
     font-size: 1.2rem;
+}
+
+.pregunta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pregunta p {
+    color: red;
+}
+
+.pregunta p {
+    width: 90%;
+}
+
+.icono-flecha { 
+    color: #fff;
+    width: 10%;
+    height: 30px;
+    padding-left: 15px;
 }
 
 .texto-oculto {
@@ -26,7 +46,41 @@
 }
 
 .texto-visible {
-    max-height: 100px;
+    max-height: auto;
     opacity: 1;
     padding-top: 10px;
+    color: #fff;
+}
+
+
+.color-light {
+    color: #fff;
+}
+
+
+/* -------------- RESPONSIVE ----------------- */
+
+/* ---------xs----------- */
+@media screen and (max-width: 575px) {
+
+}
+
+/* ---------sm----------- */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* ---------md----------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* ---------lg----------- */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* ---------xl----------- */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+
 }

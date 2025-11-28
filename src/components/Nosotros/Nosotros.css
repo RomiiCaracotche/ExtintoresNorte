@@ -17,7 +17,7 @@
 }
 
 .container-nosotros-texto {
-    height: 320px;
+    height: 400px;  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,6 +38,7 @@
     margin: 2rem;
     font-size: 1.5rem;
     color: red;
+    text-align: center;
 }
 
 .container-nosotros-texto .text {
@@ -45,19 +46,105 @@
 }
 
 .container-nosotros-img {
+    width: 100%;
+    height: 400px; 
     border-radius: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.503); 
 }
 
 .container-nosotros-img img {
-    width: 490px;
-    height: 320px;
+    width: 100%; 
+    height: 100%;
     object-fit: cover; 
     border-radius: 1rem;
 }
 
 .row-nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0.5rem 0;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* -------------- RESPONSIVE ----------------- */
+
+/* ---------xs----------- */
+@media screen and (max-width: 575px) {
+    .container-nosotros-texto {
+        height: 390px;  
+    }
+
+    .container-nosotros-img {
+        height: 390px; 
+        margin: 2rem 0;
+    }
+
+    .container-nosotros-img img{
+        object-fit: fill; 
+    }
+
+    .row-nosotros {
+        gap: 2rem;
+    }
+     
+}
+
+/* ---------sm----------- */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .container-nosotros-texto {
+        height: 390px;  
+    }
+
+    .container-nosotros-img {
+        height: 390px; 
+        margin: 2rem 0;
+    }
+
+    .container-nosotros-img img{
+        object-fit: fill; 
+    }
+
+    .row-nosotros {
+        gap: 2rem;
+    }
+}
+
+/* ---------md----------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container-nosotros-texto {
+        height: 330px;  
+    }
+
+    .container-nosotros-img {
+        height: 330px; 
+        margin: 1rem;
+    }
+}
+
+/* ---------lg----------- */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container-nosotros-img img {
+        object-fit: fill; 
+    }
+
+    .container-nosotros-texto {
+        height: 460px;  
+    }
+}
+
+/* ---------xl----------- */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .row-nosotros {
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .container-nosotros-img img {
+        object-fit: fill; 
+    }
 }
 

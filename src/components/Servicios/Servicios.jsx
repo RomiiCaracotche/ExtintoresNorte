@@ -22,8 +22,8 @@ export default function Servicios (){
 
             <Container className='column-center-center'>
             
-                    <Row>
-                        <Col xs={12} md={6} lg={4} xl={12} className='row-center-center'>
+                    <Row className='row-center-center mb-5 '>
+                        <Col xs={12} md={12} lg={12} xl={12} className='row-center-center'>
                             <div className='container-servicios-leyenda'>
                                 <p>Nuestros servicios estan orientados a todo tipo de usuarios, desde particulares hasta grandes empresas, adaptandose con precision a cada necesidad y nivel de riesgo. 
                                     En Extintores Norte, entendemos que la seguridad no es universal, es por esto que hemos desarrollado un paquete de soluciones integrales que abarcan el ciclo completo 

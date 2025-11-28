@@ -12,6 +12,13 @@
   align-items: center;
 }
 
+.section-home, .section-video, .section-contacto_horario, .section-ubicacion {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .container-home {
   width: 100vw;
 }
@@ -206,6 +213,10 @@
   color: #2834dd;
 }
 
+.col-horario {
+  /* margin-top: 3rem; */
+}
+
 /* -------------- Seccion video ----------------- */
 
 .section-video {
@@ -215,7 +226,7 @@
 }
 
 .row-video video {
-  background-color: rgb(253, 211, 4);
+  background-color: rgb(248, 220, 13);
   width: 90%;
   height: 90%;
   border-radius: 1rem;
@@ -273,6 +284,7 @@
     border: none;
     box-shadow: none;
     margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .home-card {
@@ -287,12 +299,21 @@
     width: 350px;
   }
 
-  .col-contacto_horario, .col-video, .row-ubicacion {
+  .col-contacto_horario {
     flex-direction: column;
-    border: none;
-    box-shadow: none; 
-    border-radius: 0;
-    padding: 0;
+    width: 100%;
+  }
+
+  .col-horario {
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .row-ubicacion {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 0;
   }
 
   .container-horario-info {
@@ -314,12 +335,9 @@
   }
 
    .row-video {
-    border: none;
-    box-shadow: none; 
     margin-top: 0;
-    padding-top: 0;
+    padding: 2rem 0;
     margin-bottom: 0;
-    padding-bottom: 0;
   }
 
   .container-video-video {
@@ -328,7 +346,7 @@
   }
 
   .col-ubicacion_img {
-    margin-top: 3rem;
+    margin: 3rem 0;
   }
 
 }
@@ -357,14 +375,16 @@
 
   .col-contacto_horario, .col-video, .row-ubicacion {
     flex-direction: column;
-    border: none;
-    box-shadow: none; 
-    border-radius: 0;
-    padding: 0;
+    padding: 3rem 0;
+    width: 100%;
   }
 
   .row-ubicacion {
-    width: 90%;
+    width: 100%;
+  }
+
+  .col-contacto_horario {
+    padding-top: 3rem;
   }
 
   .container-horario-info {
@@ -373,17 +393,14 @@
   }
 
   .container-horario_horario {
-    margin-top: 3rem;
     padding: 0;
   }
 
   .titulo {
-    margin-top: 1rem;
+    margin-top: 0;
   }
 
   .row-video {
-    border: none;
-    box-shadow: none; 
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 0;
@@ -395,7 +412,7 @@
   }
 
   .row-video {
-    padding: 0;
+    padding: 2rem 0;
   }
 
   .container-video-info p {
@@ -405,6 +422,10 @@
   .container-video-video {
     margin-top: 3rem;
     height: 350px;
+  }
+
+  .col-horario {
+    margin-top: 2rem;
   }
 
 

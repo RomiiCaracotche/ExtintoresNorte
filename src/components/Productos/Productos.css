@@ -15,4 +15,39 @@
     font-size: 3rem;
 }
 
+.row-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 3rem;
+}
+
+
+/* -------------- RESPONSIVE ----------------- */
+
+/* ---------xs----------- */
+@media screen and (max-width: 575px) {
+
+}
+
+/* ---------sm----------- */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* ---------md----------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* ---------lg----------- */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* ---------xl----------- */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+
+}
+
 

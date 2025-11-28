@@ -20,9 +20,9 @@ export default function Productos (){
             <h3><span>P</span>RODUCTOS</h3>
 
             <Container>
-                <Row className='row-center-center mt-2 mb-5 g-5'>
+                <Row className='row-productos'>
                     {contenedorProductos.map((producto) => (
-                        <Col key={producto.id} xs={12} md={6} lg={4} xl={4} class="row-center-center">
+                        <Col key={producto.id} xs={12} md={6} lg={4} xl={4} className='row-center-center mb-4'>
                             <Producto
                                 titulo={producto.titulo}
                                 url={producto.url}
