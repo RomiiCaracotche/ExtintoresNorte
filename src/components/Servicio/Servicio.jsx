@@ -1,4 +1,4 @@
-import "./servicio.css";
+import "./Servicio.css";
 import { Card } from 'react-bootstrap';
 
 export default function Servicio({ titulo, url }) {
