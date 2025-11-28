@@ -355,6 +355,11 @@
 
   .correo {
     font-size: 1rem;
+  }
+
+.container-bienvenido img {
+  right: 15%;
+  bottom: 25%;
 }
 
 }
