@@ -29,6 +29,24 @@
   background-image: url("../../../public/img/home/fondo.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items:last baseline;
+  padding-bottom: 100px;
+  padding-left: 50px;
+}
+
+.container-bienvenido img {
+  width: 230px;
+  height: 330px;
+}
+
+/* .container-bienvenido {
+  width: 100vw;
+  height: calc(100vh - 228px);
+  background-image: url("../../../public/img/home/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 
@@ -38,7 +56,7 @@
   position: absolute;
   right: 35%;
   bottom: 15%;
-}
+} */
 
 /* ------------------------------------------------------------------ */
 
