@@ -56,7 +56,7 @@
 .container-nosotros-img img {
     width: 100%; 
     height: 100%;
-    object-fit: cover; 
+    object-fit: fill; 
     border-radius: 1rem;
 }
 
@@ -75,16 +75,12 @@
 /* ---------xs----------- */
 @media screen and (max-width: 575px) {
     .container-nosotros-texto {
-        height: 390px;  
+        height: auto;  
     }
 
     .container-nosotros-img {
         height: 390px; 
         margin: 2rem 0;
-    }
-
-    .container-nosotros-img img{
-        object-fit: fill; 
     }
 
     .row-nosotros {
@@ -102,10 +98,6 @@
     .container-nosotros-img {
         height: 390px; 
         margin: 2rem 0;
-    }
-
-    .container-nosotros-img img{
-        object-fit: fill; 
     }
 
     .row-nosotros {
@@ -127,9 +119,6 @@
 
 /* ---------lg----------- */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .container-nosotros-img img {
-        object-fit: fill; 
-    }
 
     .container-nosotros-texto {
         height: 460px;  
