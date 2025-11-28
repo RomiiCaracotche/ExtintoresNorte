@@ -1,11 +1,13 @@
 .container-footer {
+    height: 200px;
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
-    background-color: #000;
     color: #fff;
+    background: #e62320;
+	  background: linear-gradient(0deg, rgba(230, 35, 32, 1) 0%, rgba(0, 0, 0, 1) 95%);  
 }
 
 .li-redes {

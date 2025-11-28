@@ -16,16 +16,17 @@
 	align-items: center;
 }
 
-.nombre span {
-	margin: 1rem 0;
-	font-size: 3rem;
-	text-align: center;
-	font-weight: bold;
+.nombre h1 {
     color: #fff;
-	text-shadow: 5px 10px 5px #000;
-	background-color: transparent;
-	-webkit-text-fill-color: #fff;
-  	-webkit-text-stroke: 1px #000;
+	text-shadow: 5px 10px 5px rgba(205, 184, 184, 0.5);
+	-webkit-text-fill-color: #fff; 
+  	-webkit-text-stroke: 1px #000; 
+}
+
+.nombre span {
+	font-size: 3rem;
+    -webkit-text-fill-color: #000;
+	-webkit-text-stroke: 0.3px #fff; 
 }
 
 

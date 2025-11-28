@@ -15,7 +15,7 @@ export default function Navegacion() {
                         <Link to="/Nosotros">Nosotros</Link> 
                         <Link to="/Servicios">Servicios</Link>
                         <Link to="/Productos">Productos</Link>
-                        <Link to="/Contacto">Contacto</Link> 
+                        <Link to="/Preguntas">FAQ</Link> 
                     </Nav>
                 </Navbar.Collapse>
         </Navbar>

@@ -1,0 +1,18 @@
+.section-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-productos h3 {
+    margin-top: 3rem;
+    color: #fff;
+    text-shadow: 5px 10px 5px rgb(255, 255, 255, 0.5);
+}
+
+.section-productos h3 span {
+    font-size: 3rem;
+}
+
+

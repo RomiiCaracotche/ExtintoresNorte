@@ -9,147 +9,128 @@ import { FaFacebook } from "react-icons/fa";
 import { FaClock } from "react-icons/fa";
 import Mapa from './../Mapa/Mapa.jsx';
 
+const containerHome = [
+    {id:1, titulo:"VENTA Y RECARGA DE MATAFUEGOS", url:"/img/home/extintores-lugo.jpg"},
+    {id:2, titulo:"ELEMENTOS DE PREVENCION Y SEGURIDAD", url:"/img/home/elementos.png"},
+    {id:3, titulo:"RETIRO Y ENTREGA A DOMICILIO", url:"/img/home/camioneta-perfil.png"},
+    {id:4, titulo:"CONOCIMIENTO Y EXPERIENCIA EN PREVENCION DE INCENDIOS", url:"/img/home/prevencion.png"}
+]
+
 export default function Home() {
+
     return (
 
         <div className="container-home">
-
-            <img src="/img/animacion/matafuego-bienvenido.png" className="img-bienvenido"/>
+            
+            <div className="container-bienvenido"> 
+                <img src="/img/animacion/matafuego-bienvenido.png"/>
+            </div>
 
             {/* ----------- Seccion home ----------- */}
-            <section className="mt-5">
-                <Container-fluid>
-                    <Row className="row-cards" >
-                        <Col xs={10} sm={9} md={5} lg={4} xl={3} className="col-card">
-                            <Card className="home-card">
-                                <Card.Img variant="top" src="/img/frente.jpg" />
-                                <Card.Body className="home-card-body">
-                                    <Card.Text>VENTA Y RECARGA DE MATAFUEGOS</Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col xs={10} sm={9} md={5} lg={4} xl={3} className="col-card">
-                            <Card className="home-card">
-                                <Card.Img variant="top" src="/img/local.jpg" className="object-fit-cover"/>
-                                <Card.Body className="home-card-body">
-                                    <Card.Text>ELEMENTOS DE PREVENCION Y SEGURIDAD</Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col xs={10} sm={9} md={5} lg={4} xl={3} className="col-card">
-                             <Card className="home-card">
-                                <Card.Img variant="top" src="/img/servicios/camioneta.png" className="object-fit-contain" />
-                                <Card.Body className="home-card-body">
-                                    <Card.Text>RETIRO Y ENTREGA A DOMICILIO</Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col xs={10} sm={9} md={5} lg={4} xl={3} className="col-card">
-                            <Card className="home-card">
-                                <Card.Img variant="top" src="/img/prevencion.png"/>
-                                <Card.Body className="home-card-body">
-                                    <Card.Text>CONOCIMIENTO Y EXPERIENCIA EN PREVENCION DE INCENDIOS</Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
+            <section className="section-home">
+                <Container className="row-center-center">
+                    <Row className="row-home" >
+                        {containerHome.map((item) => (
+                            <Col xs={12} sm={12} md={6} lg={6} xl={3} className="col-home">
+                                <Card className="home-card">
+                                    <Card.Img variant="top" src={item.url} />
+                                    <Card.Body className="home-card-body">
+                                        <Card.Text>{item.titulo}</Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        ))}
                     </Row>
-                </Container-fluid>
+                </Container>
             </section>
 
 
             {/* ----------- Seccion video ----------- */}
-
-            <section className="my-5">
-                <Row className="row-center-center">
-                    <Col xs={12} md={10} xl={6} className="row-center-center  p-0">
-                        <div className="container-info">
-                            <p>
-                                "En <span>Extintores Norte</span>, nuestro compromiso principal es tu seguridad y la de tus operaciones. Creemos que la información es la herramienta más poderosa para la prevención. Por ello, estamos interesados en informarte y capacitartre: no todo el fuego se combate de la misma manera. Te presentamos este video esencial sobre los diferentes tipos de fuego. Exploraremos la clasificación internacional (Clases A, B, C, D y K) basada en los materiales combustibles, y te mostraremos cómo la identificación correcta es vital para elegir el agente extintor adecuado y proteger tus activos. La prevención comienza con el conocimiento, y este es el primer paso para dominar la seguridad contra incendios."
-                            </p>
-                        </div>
-                    </Col>
-                    <Col xs={12} md={10} xl={6} className="row-center-center">
-                        <div className="container-video">
-                            <video src="/video/video.mp4" controls/>
-                        </div>
-                    </Col>
-                </Row>
+            <section className="section-video">
+                <Container className="row-center-center">
+                    <Row className="row-video">
+                        <Col xs={12} md={12} xl={6} className="p-0">
+                            <div className="container-video-info">
+                                <p>
+                                    "En <span>Extintores Norte</span>, nuestro compromiso principal es tu seguridad y la de tus operaciones. Creemos que la información es la herramienta más poderosa para la prevención. Por ello, estamos interesados en informarte y capacitartre: no todo el fuego se combate de la misma manera. Te presentamos este video esencial sobre los diferentes tipos de fuego. Exploraremos la clasificación internacional (Clases A, B, C, D y K) basada en los materiales combustibles, y te mostraremos cómo la identificación correcta es vital para elegir el agente extintor adecuado y proteger tus activos. La prevención comienza con el conocimiento, y este es el primer paso para dominar la seguridad contra incendios."
+                                </p>
+                            </div>
+                        </Col>
+                        <Col xs={12} md={11} xl={6} className="container-video-video">
+                                <video src="/video/video.mp4" controls/>
+                        </Col>
+                    </Row>
+                </Container>
             </section> 
 
 
-            {/* ----------- Seccion ubicacion ----------- */}
-            <section className="mt-1">
-                <Container-fluid>
-                        <Row className="justify-content-around align-items-center">
-                            <Col xs={12} lg={6} > 
-                                <Row className="row-center-center">
-                                    <Col xs={12} lg={10} xl={12} >
-                                        <div className="column-center-center">
-                                            <h3 className="titulo">PODES ENCONTRARNOS EN</h3>
-                                            <ul className="ul-ubicacion">
-                                                <li>LA PLATA,</li>
-                                                <li><FaMapLocationDot /> Calle 519 N° 1820 esq. 13</li>
-                                            </ul>
-                                        </div>
-                                    </Col> 
-                                    <Col xs={12} sm={11} md={12} className="row-center-center">
-                                        <img src="/img/animacion/matafuego-mapa.png" className="img-extintor" />
-                                    </Col>
-                                </Row>
-                            </Col>
-                            <Col xs={12} sm={11} md={9} lg={6} className="col-mapa">
-                                <Mapa />
-                            </Col>
-                        </Row>
-                </Container-fluid>
-            </section>
-
             {/* ----------- Seccion contacto/horario ----------- */}
-            <section className="w-100 mt-5">   
-                <Container-fluid>
-                        <Row className="row-contacto_horario">             
-                                <Col xs={12} sm={12} md={8} lg={7} xl={4}>
-                                    <div className="column-center-center">
+            <section className="section-contacto_horario">   
+                <Container>
+                        <Row className="row-contacto_horario">            
+                                <Col xs={12} sm={12} md={10} lg={8} xl={5} className="col-contacto_horario">
+                                    <div className="container-contacto-info">
                                         <h3 className="titulo">CONTACTANOS POR</h3>
                                         <ul className="ul-contacto">
-                                            <li><a href="mailto:extintoresnorte@hotmail.com" className="color-rojo"><MdAlternateEmail/> extintoresnorte@hotmail.com <MdOutlineAdsClick className="icon-click"/></a></li>
-                                            <li><a href="tel:02214710750" className="color-gris"><FaPhone/> 0221 471-0750 <MdOutlineAdsClick className="icon-click"/></a></li>
-                                            <li><a href="https://wa.me/2215448911" className="color-gris"><IoLogoWhatsapp/> 221-544-8911 <MdOutlineAdsClick className="icon-click"/></a></li>
-                                            <li><a href="https://wa.me/2215369997" className="color-gris"><IoLogoWhatsapp/> 221-536-9997 <MdOutlineAdsClick className="icon-click"/></a></li>
-                                            <li><a href="https://www.instagram.com/extintores_norte/" className="color-rojo"><BsInstagram/> Extintores_norte <MdOutlineAdsClick className="icon-click"/></a></li>
-                                            <li><a href="https://www.facebook.com/extintoresnorte/?locale=es_LA" className="color-rojo"><FaFacebook/> Extintores Norte <MdOutlineAdsClick className="icon-click"/></a></li>
+                                            <li><a href="mailto:extintoresnorte@hotmail.com" className="color-red" style={{color:"red"}}><MdAlternateEmail/> extintoresnorte@hotmail.com <MdOutlineAdsClick className="color-light"/></a></li>
+                                            <li><a href="tel:02214710750" className="color-light"><FaPhone/> 0221 471-0750 <MdOutlineAdsClick className="color-light"/></a></li>
+                                            <li><a href="https://wa.me/2215448911" className="color-green"><IoLogoWhatsapp/> 221-544-8911 <MdOutlineAdsClick className="color-light"/></a></li>
+                                            <li><a href="https://wa.me/2215369997" className="color-green"><IoLogoWhatsapp/> 221-536-9997 <MdOutlineAdsClick className="color-light"/></a></li>
+                                            <li><a href="https://www.instagram.com/extintores_norte/" className="color-blue"><BsInstagram/> Extintores_norte <MdOutlineAdsClick className="color-light"/></a></li>
+                                            <li><a href="https://www.facebook.com/extintoresnorte/?locale=es_LA" className="color-blue"><FaFacebook/> Extintores Norte <MdOutlineAdsClick className="color-light"/></a></li>
                                         </ul>
-                                    </div>  
+                                    </div>   
                                 </Col>
-                                <Col xs={12} sm={12} md={7} lg={7} xl={5} className="h-100">
-                                    <Row>
-                                            <Col xs={12} sm={12} md={8} lg={11} xl={8}>
-                                                <div className="d-flex flex-column justify-content-around align-items-center mt-5">
-                                                    <h3 className="titulo">HORARIOS</h3>
-                                                    <ul className="ul-horario">
-                                                        <li>LUNES a VIERNES</li>
-                                                        <li><p className="hora"><FaClock/> 8.30hs  a  17hs</p></li>
-                                                        <li>SABADOS</li>
-                                                        <li><p className="hora"><FaClock/> 8.30hs  a  13hs</p></li>
-                                                    </ul>
-                                                </div>
-                                            </Col>
-                                            <Col xs={12} sm={12} md={4} lg={1} xl={3} className="col-extintor-reloj">
-                                                <img src="/img/animacion/matafuego-reloj.png" className="img-extintor"/>
-                                            </Col>
-                                    </Row>
-                                </Col>
+                                
+                               <Col xs={12} sm={12} md={10} lg={8} xl={5} className="col-contacto_horario">
+                                        <div className="container-horario-info">
+                                            <div className="container-horario_horario">
+                                                <h3 className="titulo">HORARIOS</h3>
+                                                <ul className="ul-horario">
+                                                    <li className="color-red">LUNES a VIERNES</li>
+                                                    <li><p className="hora color-light"><FaClock/> 8.30hs  a  17hs</p></li>
+                                                    <li className="color-red">SABADOS</li>
+                                                    <li><p className="hora color-light"><FaClock/> 8.30hs  a  13hs</p></li>
+                                                </ul>
+                                            </div>
+                                            <div className="container-horario_img">
+                                                <img src="/img/animacion/matafuego-reloj.png"/>
+                                            </div>
+                                        </div>
+                                </Col> 
+                        </Row>
+                </Container>
+            </section>
+
+
+             {/* ----------- Seccion ubicacion ----------- */}
+            <section className="section-ubicacion">
+                <Container-fluid className="row-center-center w-100
+                ">
+                        <Row className="row-ubicacion">   
+                            <Col xs={12} md={10} lg={10} className="col-ubicacion"> 
+                                <h3 className="titulo">PODES ENCONTRARNOS EN</h3>
+                                <ul className="ul-ubicacion">
+                                    <li>LA PLATA,</li>
+                                    <li><FaMapLocationDot className="color-light"/> Calle 519 N° 1820 esq. 13</li>
+                                </ul>
+                            </Col>
+                            <Col xs={12} lg={7} xl={6}className="col-ubicacion_mapa">
+                                <Mapa />
+                            </Col>
+                            <Col xs={12} lg={3} xl={3} className="col-ubicacion_img">
+                                <img src="/img/animacion/matafuego-mapa2.png" />
+                            </Col>
                         </Row>
                 </Container-fluid>
             </section>
+            
  
-
             {/* ----------- Seccion whatsapp ----------- */}
-
-            <section className="mty-5">
-                    <a href="https://wa.me/2215369997" >
-                        <img src="/img/whats2.png" className="whatsapp"/>
-                    </a>
+            <section>
+                <a href="https://wa.me/2215369997" >
+                    <img src="/img/home/whatsapp.png" className="whatsapp"/>
+                </a>
             </section>   
                 
         </div>

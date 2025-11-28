@@ -5,7 +5,7 @@ import { Icon } from "leaflet" ;
 
 export default function Mapa() {    
 
-	const skater = new Icon ({ iconUrl : "/img/marker.png" , iconSize : [ 60 , 60 ] }); 
+	const skater = new Icon ({ iconUrl : "/img/home/marker.png" , iconSize : [ 60 , 60 ] }); 
 
 	return (
 		<MapContainer center={{lat:"-34.8954285", lng:"-57.9912678"}} zoom={16}>
