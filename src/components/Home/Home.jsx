@@ -70,9 +70,9 @@ export default function Home() {
                         <Row className="row-contacto_horario">            
                                 <Col xs={12} sm={12} md={10} lg={8} xl={5} className="col-contacto_horario">
                                     <div className="container-contacto-info">
-                                        <h3 className="titulo">CONTACTANOS POR</h3>
+                                        <h3 className="titulo">CONTACTANOS</h3>
                                         <ul className="ul-contacto">
-                                            <li><a href="mailto:extintoresnorte@hotmail.com" className="color-red" style={{color:"red"}}><MdAlternateEmail/> extintoresnorte@hotmail.com <MdOutlineAdsClick className="color-light"/></a></li>
+                                            <li><a href="mailto:extintoresnorte@hotmail.com" className="color-red correo"><MdAlternateEmail/> extintoresnorte@hotmail.com <MdOutlineAdsClick className="color-light"/></a></li>
                                             <li><a href="tel:02214710750" className="color-light"><FaPhone/> 0221 471-0750 <MdOutlineAdsClick className="color-light"/></a></li>
                                             <li><a href="https://wa.me/2215448911" className="color-green"><IoLogoWhatsapp/> 221-544-8911 <MdOutlineAdsClick className="color-light"/></a></li>
                                             <li><a href="https://wa.me/2215369997" className="color-green"><IoLogoWhatsapp/> 221-536-9997 <MdOutlineAdsClick className="color-light"/></a></li>

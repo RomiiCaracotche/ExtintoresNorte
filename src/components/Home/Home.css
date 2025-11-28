@@ -345,9 +345,17 @@
     height: 350px;
   }
 
+  .container-video-info p {
+    text-align: center;
+  }
+
   .col-ubicacion_img {
     margin: 3rem 0;
   }
+
+  .correo {
+    font-size: 1rem;
+}
 
 }
 
