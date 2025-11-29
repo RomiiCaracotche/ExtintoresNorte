@@ -25,15 +25,28 @@ export default function Servicios (){
                     <Row className='row-center-center mb-5 '>
                         <Col xs={12} md={12} lg={12} xl={12} className='row-center-center'>
                             <div className='container-servicios-leyenda'>
-                                <p>Nuestros servicios estan orientados a todo tipo de usuarios, desde particulares hasta grandes empresas, adaptandose con precision a cada necesidad y nivel de riesgo. 
-                                    En Extintores Norte, entendemos que la seguridad no es universal, es por esto que hemos desarrollado un paquete de soluciones integrales que abarcan el ciclo completo 
-                                    de proteccion contra incendios, manteniendo siempre nuestra premisa de brindar la maxima calidad y asistencia permanente:<br/>
+                                <p> Nuestros servicios estan orientados a todo tipo de usuarios, adaptandonos a cada 
+                                    necesidad y nivel de riesgo. En Extintores Norte, brindamos soluciones integrales que abarcan 
+                                    el ciclo completo de proteccion contra incendios, manteniendo siempre nuestra premisa de brindar 
+                                    la maxima calidad y asistencia permanente:<br/>
                                     
-                                    <br/><span>Venta de Equipos y Accesorios de Seguridad: </span> Proveemos una amplia gama de extintores nuevos, homologados y especificos para cada riesgo (ABC, CO2, Humedo, etc.), ademas de accesorios de seguridad esenciales como gabinetes, carteleria de señalizacion y balizas, entre otros.<br/>
-                                    <br/><span>Recarga, Control y Mantenimiento de Matafuegos: </span> Garantizamos la operatividad y eficacia de sus equipos. Realizamos el servicio completo de recarga, control de presion y mantenimiento periodico, incluyendo la Prueba Hidrostatica (PH) obligatoria, para que sus extintores cumplan con los estandares de la norma IRAM y las leyes vigentes.<br/>
-                                    <br/><span>Capacitacion y Asesoramiento Integral: </span> No solo vendemos equipos, sino conocimiento. Ofrecemos capacitacion práctica y teorica que incluye el asesoramiento para el correcto cumplimiento normativo y la enseñanza del uso correcto del extintor, asegurando que su personal este preparado para actuar en una emergencia.<br/>
+                                    <br/><span>Venta de Equipos y Accesorios de Seguridad</span>{/*  Proveemos una amplia gama de 
+                                    extintores nuevos, homologados y especificos para cada riesgo (ABC, CO2, Humedo, etc.), ademas 
+                                    de accesorios de seguridad esenciales como gabinetes, carteleria de señalizacion y balizas, 
+                                    entre otros. */}<br/>
 
-                                    <br/>Le quitamos la preocupación de la gestion de la seguridad, permitiendole concentrarse en sus actividades, con la tranquilidad de saber que esta protegido y dentro de la ley.</p>
+                                    <br/><span>Recarga, Control y Mantenimiento de Matafuegos </span> {/* Garantizamos la operatividad 
+                                    y eficacia de sus equipos. Realizamos el servicio completo de recarga, control de presion y
+                                     mantenimiento periodico, incluyendo la Prueba Hidrostatica (PH) obligatoria, para que sus 
+                                     extintores cumplan con los estandares de la norma IRAM y las leyes vigentes. */}<br/>
+
+                                    <br/><span>Capacitacion y Asesoramiento Integral </span> {/* No solo vendemos equipos, sino 
+                                    conocimiento. Ofrecemos capacitacion práctica y teorica que incluye el asesoramiento para el 
+                                    correcto cumplimiento normativo y la enseñanza del uso correcto del extintor, asegurando que 
+                                    su personal este preparado para actuar en una emergencia. */}<br/>
+
+                                    <br/>Le quitamos la preocupación de la gestion de la seguridad, permitiendole concentrarse en 
+                                    sus actividades, con la tranquilidad de saber que esta protegido y dentro de la ley.</p>
                             </div> 
                         </Col>
                     </Row>

@@ -52,7 +52,12 @@ export default function Home() {
                         <Col xs={12} md={12} xl={6} className="p-0">
                             <div className="container-video-info">
                                 <p>
-                                    "En <span>Extintores Norte</span>, nuestro compromiso principal es tu seguridad y la de tus operaciones. Creemos que la información es la herramienta más poderosa para la prevención. Por ello, estamos interesados en informarte y capacitartre: no todo el fuego se combate de la misma manera. Te presentamos este video esencial sobre los diferentes tipos de fuego. Exploraremos la clasificación internacional (Clases A, B, C, D y K) basada en los materiales combustibles, y te mostraremos cómo la identificación correcta es vital para elegir el agente extintor adecuado y proteger tus activos. La prevención comienza con el conocimiento, y este es el primer paso para dominar la seguridad contra incendios."
+                                    "En <span>Extintores Norte</span>, nuestro compromiso principal es tu seguridad. 
+                                    Creemos que la información es la herramienta más poderosa para la prevención. Por ello, estamos interesados 
+                                    en informarte: no todo el fuego se combate de la misma manera. Te presentamos este video esencial 
+                                    sobre los diferentes tipos de fuego. Exploraremos la clasificación internacional (Clases A, B, C, D y K) 
+                                    basada en los materiales combustibles, y te mostraremos cómo la identificación correcta es vital para elegir el 
+                                    agente extintor adecuado. La prevención comienza con el conocimiento."
                                 </p>
                             </div>
                         </Col>
