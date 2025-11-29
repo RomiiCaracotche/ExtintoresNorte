@@ -472,7 +472,7 @@
   }
 
   .col-ubicacion_img {
-    margin-top: 3rem;
+    margin: 3rem 0;
   }
 
   .row-video {
@@ -515,8 +515,7 @@
   }
 
   .col-ubicacion_img img {
-    margin-top: 3rem;
-    margin-bottom: 0;
+    margin: 3rem 0;
   }
 
   .row-contacto_horario {

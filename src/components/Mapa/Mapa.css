@@ -13,7 +13,7 @@
 /* ---------xs----------- */
 @media screen and (max-width: 575px) {
   .leaflet-container {
-    width: 400px;
+    width: 95%;
     height: 370px;    
   }
 }
@@ -22,7 +22,7 @@
 /* ---------sm----------- */
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .leaflet-container {
-    width: 400px;
+    width: 90%;
     height: 370px;    
   }
 }
@@ -30,7 +30,7 @@
 /* ---------md----------- */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .leaflet-container {
-    width: 370px;
+    width: 80%;
     height: 370px;    
   }
 }
