@@ -1,22 +1,19 @@
-.column-center-center, .container-home, .home-card, .container-horario_horario, .container-contacto-info, .ul-contacto, .ul-horario, .col-ubicacion, .container-video-video, .col-contacto_horario  {
+.column-center-center, .container-home, .home-card, .container-flota, .container-horario_horario, .container-contacto-info, .ul-contacto, .ul-horario, .col-ubicacion, .container-video-video, .col-contacto_horario  {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.row-center-center, .row-home, .col-home, .home-card-body, .col-video, .section-ubicacion, .row-ubicacion, .col-ubicacion_img, .col-ubicacion_mapa, .row-ubicacion-direccion, .section-video {
+.row-center-center, .row-home, .col-home, .home-card-body, .row-flota, .col-flota, .col-video, .section-ubicacion, .row-ubicacion, .col-ubicacion_img, .section-video {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.section-home, .section-video, .section-contacto_horario, .section-ubicacion {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+.section-home {
+  margin: 3rem 0;
 }
 
 .container-home {
@@ -44,12 +41,13 @@
 
 /* ------------------------------------------------------------------ */
 
-.row-home, .row-video {
+.row-home, .row-flota, .row-video {
   border: 2px solid rgba(255, 0, 0, 0.5);
   box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.503); 
   border-radius: 1rem;
   padding: 2rem;
   margin: 1rem 0;
+  width: 100%;
 }
 
 .home-card {
@@ -76,12 +74,47 @@
   font-weight: bold;
 }
 
+/* -------------- Seccion flota ----------------- */
+
+.section-flota {
+  margin: 3rem 0;
+} 
+
+.container-flota {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #000000;
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.503); 
+  border-radius: 1rem;
+  padding: 3rem 0;
+}
+
+.row-flota {
+  padding: 0;
+}
+
+.col-flota {
+  padding: 0;
+}
+
+.col-flota img {
+  width: 92%;
+  height: auto;
+  border-radius: 1rem;
+  border: 1px solid #fff;
+  margin: 4%;
+}
+
+.titulo-flota {
+  width: 100%;
+}
+
 /* -------------- Seccion ubicacion ----------------- */
 
 .section-ubicacion {
+  margin: 3rem 0;
   width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
 }
 
 .ul-ubicacion {
@@ -97,8 +130,24 @@
   color: red;
 }
 
+.row-ubicacion {
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.503); 
+  border-radius: 1rem;
+  margin: 0;
+  margin-top: 2rem;
+  padding: 3rem 0;
+}
+
 .col-ubicacion {
-  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.col-ubicacion_img img {
+  margin-top: 1rem;
 }
 
 .col-ubicacion_img img {
@@ -108,17 +157,21 @@
 
 /* -------------- Seccion contacto/horario ----------------- */
 
-.col-contacto_horario, .col-video, .row-ubicacion {
+.section-contacto_horario {
+  margin: 3rem 0;
+}
+
+.col-contacto_horario, .col-video {
   background-color: #000000;
   border: 2px solid rgba(255, 0, 0, 0.5);
   box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.503); 
   border-radius: 1rem;
   padding: 3rem 0;
+  margin-top: 1rem;
 }
 
-.row-ubicacion {
-  padding-bottom: 5rem;
-  width: 70%;
+.col-contacto_horario {
+  flex-grow: 1;
 }
 
 .section-contacto_horario {
@@ -135,6 +188,8 @@
   gap: 3rem;
   display: flex;
   justify-content: center;
+  display: flex;
+  align-items: stretch;
 } 
 
 .ul-contacto, .ul-horario {
@@ -172,6 +227,12 @@
   margin-top: 2rem;
   text-align: center;
   color: #fff;
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.503); 
+}
+
+.titulo-home {
+  width: 100%;
 }
 
 .ul-contacto li a:hover {
@@ -216,14 +277,13 @@
 
 .section-video {
   width: 100%;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  margin: 3rem 0;
 }
 
 .row-video video {
   background-color: rgb(248, 220, 13);
   width: 90%;
-  height: 90%;
+  height: 90%; 
   border-radius: 1rem;
   object-fit: contain;
 }
@@ -251,6 +311,10 @@
   padding: 0;
 }
 
+.titulo-video {
+  width: 100%;
+}
+
 
 /* -------------- Seccion whatsapp ----------------- */
 
@@ -275,12 +339,11 @@
 /* ---------xs----------- */
 @media screen and (max-width: 575px) {
 
-  .row-home {
+ .row-home { 
     border: none;
-    box-shadow: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
+    box-shadow: none; 
+    border-radius: none;
+  } 
 
   .home-card {
     width: 400px;
@@ -305,12 +368,6 @@
     width: 100%;
   }
 
-  .row-ubicacion {
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 0;
-  }
-
   .container-horario-info {
     flex-direction: column;
     align-items: center;
@@ -323,6 +380,10 @@
 
   .titulo {
     margin-top: 1rem;
+  }
+
+  .titulo-home {
+    width: 400px;
   }
 
   .container-contactanos-img {
@@ -358,12 +419,11 @@
 /* ---------sm----------- */
 @media screen and (min-width: 576px) and (max-width: 767px) {
 
-  .row-home {
+  .row-home { 
     border: none;
-    box-shadow: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
+    box-shadow: none; 
+    border-radius: none;
+  } 
 
   .home-card {
     width: 400px;
@@ -377,13 +437,9 @@
     width: 350px;
   }
 
-  .col-contacto_horario, .col-video, .row-ubicacion {
+  .col-contacto_horario, .col-video {
     flex-direction: column;
     padding: 3rem 0;
-    width: 100%;
-  }
-
-  .row-ubicacion {
     width: 100%;
   }
 
@@ -402,6 +458,10 @@
 
   .titulo {
     margin-top: 0;
+  }
+
+  .titulo-home {
+    width: 400px;
   }
 
   .row-video {
@@ -438,12 +498,6 @@
 /* ---------md----------- */
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-  .row-ubicacion {
-    width: 85%;
-    margin: auto;
-    padding-bottom: 5rem;
-  }
-
   .col-contacto_horario {
     padding-top: 0;
   }
@@ -463,11 +517,6 @@
   .col-ubicacion_img img {
     margin-top: 3rem;
     margin-bottom: 0;
-  }
-
-  .row-ubicacion {
-    width: 90%;
-    padding-bottom: 3rem;
   }
 
   .row-contacto_horario {
@@ -510,22 +559,11 @@
     align-items: center;
     justify-content: center;
     padding: 3rem 0;
-    width: 90%;
   }
 
   .container-video-video {
     margin-top: 2rem;
   }
-
-  .row-home {
-    padding: 0;
-    width: 90%;
-  } 
-
-  .row-ubicacion {
-    width: 80%;
-  }
-
 
 }
 
