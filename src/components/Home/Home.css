@@ -179,6 +179,11 @@
   margin: 3rem 0;
 }
 
+.col-horario {
+  display: flex;
+  flex-direction: column;
+}
+
 .container-horario_horario {
   padding: 0 3rem;
 }
@@ -339,10 +344,24 @@
 /* ---------xs----------- */
 @media screen and (max-width: 575px) {
 
+  .section-home {
+    margin: 0;
+  }
+
+  .section-contacto_horario {
+    margin-bottom: 4rem;
+  }
+
+  .section-ubicacion {
+    margin-bottom: 4rem;
+  }
+
  .row-home { 
     border: none;
     box-shadow: none; 
     border-radius: none;
+    margin: 0;
+    padding: 1rem;
   } 
 
   .home-card {
@@ -359,12 +378,6 @@
 
   .col-contacto_horario {
     flex-direction: column;
-    width: 100%;
-  }
-
-  .col-horario {
-    flex-direction: column;
-    margin-top: 2rem;
     width: 100%;
   }
 
@@ -412,14 +425,34 @@
 .container-bienvenido img {
   right: 15%;
   bottom: 25%;
-}
+  }
+
+  .col-contacto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
 
 }
 
 /* ---------sm----------- */
 @media screen and (min-width: 576px) and (max-width: 767px) {
 
+  .section-home {
+    margin: 0;
+  }
+
+  .section-contacto_horario {
+    margin-bottom: 4rem;
+  }
+
+  .section-ubicacion {
+    margin-bottom: 4rem;
+  }
+
   .row-home { 
+    margin: 0;
+    padding: 1rem;
     border: none;
     box-shadow: none; 
     border-radius: none;
@@ -464,13 +497,6 @@
     width: 400px;
   }
 
-  .row-video {
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-
   .col-ubicacion_img {
     margin: 3rem 0;
   }
@@ -489,9 +515,8 @@
   }
 
   .col-horario {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
-
 
 }
 
@@ -562,6 +587,10 @@
 
   .container-video-video {
     margin-top: 2rem;
+  }
+
+  .col-horario {
+    margin-top: 3rem;
   }
 
 }

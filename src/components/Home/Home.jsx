@@ -65,7 +65,7 @@ export default function Home() {
             <section className="section-contacto_horario">   
                 <Container>
                         <Row className="row-contacto_horario">               
-                                <Col xs={12} sm={12} md={10} lg={8} xl={5} className="d-flex flex-column">
+                                <Col xs={12} sm={12} md={10} lg={8} xl={5} className="col-contacto">
                                     <h3 className="titulo titulo-contacto">CONTACTANOS</h3>
                                     <div className="col-contacto_horario">
                                         <ul className="ul-contacto">
@@ -78,7 +78,7 @@ export default function Home() {
                                         </ul>
                                     </div>   
                                 </Col>
-                                <Col xs={12} sm={12} md={10} lg={8} xl={5} className="d-flex flex-column">
+                                <Col xs={12} sm={12} md={10} lg={8} xl={5} className="col-horario">
                                         <h3 className="titulo titulo-horario">HORARIOS</h3>
                                         <div className="col-contacto_horario">
                                             <ul className="ul-horario">
