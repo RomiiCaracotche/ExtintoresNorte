@@ -27,12 +27,11 @@
 
 .producto-card-detalle {
   color: #fff;
-  background-color: #000;
 }
 
 .producto-card-detalle p {
   padding: 0 1.5rem;
-  text-align: justify;
+  text-align: center;
 }
 
 .producto-card > img {
@@ -74,6 +73,9 @@
 }
 
 .div-oculto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-color: red;
     position: absolute;
     top: 0;
